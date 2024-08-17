@@ -13,17 +13,13 @@ This project is a Flask application that performs CRUD (Create, Read, Update, De
 ## Installation
 1. Clone the repository:
     ```sh
-    git clone <repository-url>
+    git clone https://github.com/Ajay702/CRUD.git
     ```
-2. Navigate to the project directory:
-    ```sh
-    cd <project-directory>
-    ```
-3. Create a virtual environment:
+2. Create a virtual environment:
     ```sh
     python -m venv venv
     ```
-4. Activate the virtual environment:
+3. Activate the virtual environment:
     - On Windows:
         ```sh
         venv\Scripts\activate
@@ -32,7 +28,7 @@ This project is a Flask application that performs CRUD (Create, Read, Update, De
         ```sh
         source venv/bin/activate
         ```
-5. Install the required packages:
+4. Install the required packages:
     ```sh
     pip install -r requirements.txt
     ```
@@ -56,7 +52,7 @@ This project is a Flask application that performs CRUD (Create, Read, Update, De
     from pymongo import MongoClient
 
     mongo_client = MongoClient("mongodb://localhost:27017/")
-    db = mongo_client["your_database_name"]
+    db = mongo_client["DB_NAME"]
     ```
 3. Ensure the database and collection names match those used in your application.
 
