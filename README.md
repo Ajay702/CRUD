@@ -46,16 +46,7 @@ This project is a Flask application that performs CRUD (Create, Read, Update, De
 4. Open a web browser and navigate to `http://127.0.0.1:5000/`.
 
 ## Connecting to MongoDB
-1. Ensure MongoDB is installed and running on your machine or accessible via a cloud service.
-2. Update the MongoDB connection string in your Flask application configuration. Typically, this is done in a configuration file or directly in the application code:
-    ```python
-    from pymongo import MongoClient
-
-    mongo_client = MongoClient("mongodb://localhost:27017/")
-    db = mongo_client["DB_NAME"]
-    ```
-3. Ensure the database and collection names match those used in your application.
-
+Ensure MongoDB is installed and running on your machine or accessible via a cloud service.
 ## API Endpoints
 - `GET /users` - Returns a list of all users.
 - `GET /users/<id>` - Returns the user with the specified ID.
